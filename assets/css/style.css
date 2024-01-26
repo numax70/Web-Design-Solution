@@ -1,0 +1,459 @@
+html {
+    font-size: 100%;
+}
+
+p {
+    margin: 0 0 20px;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+a:hover{
+    color: #ee9e49;
+}
+.navbar-brand{
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    opacity: 0.7;
+}
+.nav-item a{
+    padding: 0 0.9em !important;
+    font-weight: 600;
+    
+}
+
+.text-wrap{
+    position: relative;
+}
+a.nav-link>span:after{
+    display: block;
+    background-color: #13aff0;
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    visibility: hidden;
+    -moz-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+.nav-link:hover{
+    color: #13aff0 !important; 
+}
+.nav-link:hover>span:after{
+    visibility: visible;
+    -moz-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.headone{
+    /* font-size:3rem; */
+    font-weight: 400 !important;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 0.5em;
+    color: #1C466D;
+}
+
+.headtwo{
+    color: #1C466D;
+    font-weight: 600 !important;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    /* font-size: 5.3rem; */
+    line-height: 1em;
+}
+.element-heading-title{
+    color: #1C466D;
+    font-family:"Noto Sans", "Sans-serif";
+    /* font-size: 1.9rem; */
+    font-weight: 600;
+}
+
+#services{
+    background-color: #F9F9F9;
+    padding: 100px 0;
+    
+    
+}
+.imagewebservices img{
+    transition: 0.3s; 
+}
+
+.imagewebservices img:hover{
+    transform: scale(0.9);
+}
+.paragrafoservices{
+    color: #aaaaaa;
+    line-height: 1.6em;
+    font-weight: 400;
+}
+
+.text-about{
+    text-align: left;
+    color: #7a7a7a;
+    font-weight: 400;
+    font-family: "Roboto", Sans-serif;
+    box-sizing:border-box;
+}
+.text-about p{
+    margin-bottom: 0.3em;
+}
+
+.backcontent{
+    position: relative;
+    background-image:url('../img/about_me.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 100%; 
+    min-height: 90vh; 
+    
+}
+.backlight{
+    background-color: #FFFFFFCF;
+    padding: 30px;
+    margin-top: 4em;
+}
+.bottom {
+    clip-path: polygon(0 0,50% 50px,100% 0,100% 100%,0 100%);
+    margin-top: -40px;
+  }
+
+ 
+/*---Element Shape---*/
+
+.element-shape[data-negative=false].element-shape-bottom, 
+.element-shape[data-negative=true].element-shape-top {
+   transform: rotate(180deg);
+}
+
+.element-shape-bottom {
+    bottom: -1px;
+}
+
+.element-shape {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+}
+
+.element-shape-bottom svg {
+    height: 5.6em;
+    /* width: calc(100% + 1.3px); */
+    transform: translateX(-50%) rotateY(180deg)!important;
+}
+
+.element-shape-bottom:not([data-negative=true]) svg {
+    z-index: -1;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.element-shape svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.element-shape-bottom 
+.element-shape-fill {
+    fill: #F9F9F9;
+}
+
+.element-shape .element-shape-fill {
+    fill: #fff;
+    transform-origin: center;
+    transform: rotateY(0deg);
+}
+
+.element-shape-top {
+    top: -1px;
+}
+
+.element-shape-top svg {
+    height: 5.6em;
+    transform: translateX(-50%) rotateY(180deg);
+}
+.element-shape-top 
+.element-shape-fill {
+    fill: #F9F9F9;
+}
+
+.element-shape-fill {
+    transform-origin: center;
+    transform: rotateY(0deg);
+}
+
+ .element-shape-bottom .element-shape-fill {
+     fill: #F9F9F9;
+ }
+
+/*-----------------------------------------------------------*/
+
+/*----Services Section----*/
+.image-box-title{
+    color: #1C466D;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.image-box-description{
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color:#7a7a7a;
+}
+
+
+
+/*----Offers Section----*/
+#offers{
+    padding: 5.6em 0 5.6em 0;
+}
+
+.element-image-box-container{
+   max-width: 6em;
+   /* margin-right: 1.6em; */
+}
+.element-image-box-container img{
+    transition: 0.3s;
+   
+}
+
+.element-image-box-container img:hover{
+    transform: scale(0.9);
+}
+.element-image-box-title{
+    margin-bottom: 10px;
+    color: #1C466D;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.element-image-box-description{
+    font-family: "Noto Sans", Sans-serif;
+    font-weight: 400;
+    color: #7a7a7a;
+}
+
+.image-offers-img{
+    border-radius: 10px 12px 10px 0px;
+    box-shadow: 0px 0px 10px 0.17px rgb(0 0 0 / 50%);
+}
+
+
+/*---Portfolio Section----*/
+#portfolio{
+    background-color: #F9F9F9;
+    background-image: url("../img/shadow.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 5.6em 0 5.6em 0;
+}
+
+.card-image{
+    overflow: hidden;
+    position: relative;
+}
+.card{
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 10px 0.17px rgb(0 0 0 / 50%);
+}
+
+.card-image img{
+    filter:grayscale(1);
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 2s;
+   
+}
+
+.card-image img:hover{
+    cursor: pointer;
+    filter:grayscale(0);
+    transform: scale(1.1);
+    
+}
+
+/*-----Deepening Section-----------------*/
+#deepening{
+    background-color: #F9F9F9;
+    background-image: url("../img/deepening-section.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 6.25em 0 6.25em 0;
+}
+.element-background-overlay{
+    background-color: #000000;
+    opacity: 0.7;
+    /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    
+    
+}
+.call-to-action{
+    padding: 9em 3em 9em 3em;
+   
+}
+.call-to-action-title h1{
+    color: #FFFFFF;
+    font-family: "Noto Sans", Sans-serif;
+    /* font-size: 2.5rem; */
+    font-weight: 600;
+    
+}
+.call-to-action-subtitle{
+    color: #C1C5CB;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0px 0px 1.9em 0px;
+
+}
+
+ 
+.call-to-action-button{
+    color:#fff;
+    border: 1px solid #fff;
+    border-radius: 35em;
+    padding: 1em 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.call-to-action-button:hover{
+    background-color: #ee9e49;
+}
+
+.call-to-action-button:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 0;
+    z-index: -1;
+    transition: all .3s;
+}
+
+/*------Clients Section-----*/
+#clients{
+    background-color: #F9F9F9;
+    padding: 5em 0 5em 0;
+}
+
+
+/*-----Contactc Section-----*/
+#contact{
+    padding: 6.25em 0 6.25em 0;
+    /* background-color: #F9F9F9; */
+    background-image: url("assets/img/shadow.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.social-icon-title{
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.social-icon-box-description{
+    color: #A0A0A0;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+} 
+
+.button-element{
+    background-color: #EE9E49;
+    color: #ffffff;
+    border:none;
+}
+
+/*----Footer----*/
+#footer{
+    background-color: #1C1C1C;
+    padding:5em 0 5em 0; 
+}
+
+.social-facebook-icon-footer a{
+    /* width:3.5em;
+    height: 3.5em; */
+    font-family: "Noto Sans", Sans-serif;
+    margin: 1.25em 0.6em 0.6em 0em;
+    padding: 1.5em 0.4em 1em 1em;
+    border-radius: 10px 10px 10px 10px;
+}
+.social-facebook-icon-footer i{
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+/*----------------Scroll to top-----------*/
+#scroll{
+    background-color: #dd9933;
+    display: none;
+    /* opacity: 0; */
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    /* background-color: rgba(0,0,0,0.4); */
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    z-index: 100;
+    box-sizing: content-box;
+}
+
+#scroll:hover{
+    color:#dd9933;
+    background-color: white;
+    
+}
+
+.iubenda-embed:not(.iubenda-nostyle):hover {
+    color: #dd9933 !important;
+    background-color: white !important;
+}

@@ -1,0 +1,173 @@
+/*---------Font sito web-------*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: orange;
+}
+
+
+/*------Menù------*/
+.dropdown-item {
+    color: white;
+}
+
+/*----------------*/
+.dropdown-item:hover {
+    color: red;
+    background: white;
+}
+
+/*------------------------*/
+/*------Ombreggiatura bordo----*/
+.borderstyle {
+    border: 1px solid #918d8d;
+    -moz-box-shadow: 10px 10px 5px #dedede;
+    -webkit-box-shadow: 10px 10px 5px #dedede;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#dedede', Direction=135, Strength=10);
+    box-shadow: 7px 7px 3px #918d8d;
+}
+
+/*------------------------------*/
+/*----Compromesso allinemaneto testata--------*/
+.container {
+    padding-right: var(--bs-gutter-x, .18rem);
+    padding-left: var(--bs-gutter-x, .18rem);
+}
+
+/*----------Altezza container testata-----*/
+
+.containerheight {
+    height: 150px;
+}
+
+/*----Testo------*/
+.brandtext {
+    font-size: 1.2em;
+    font-style: italic;
+    letter-spacing: 0.08em;
+}
+
+.about {
+    letter-spacing: 0.04em;
+    font-size: 1.3em;
+
+}
+
+.fontresponsive h2 {
+    font-size: 5vw;
+}
+
+/*------------------*/
+
+
+/* #presentazione {
+    line-height: 0.7;
+} */
+
+/*-----Anteprima card pagina index.html----*/
+.anteprimacard {
+    line-height: 0px;
+}
+
+.imgopacity {
+    transition: 3sec;
+    opacity: 0.9;
+}
+
+.imgopacity:hover {
+    opacity: 1;
+}
+
+/*---------------------------------------*/
+
+/*-----Anteprima card misure.html----*/
+.overlay {
+    transition: 3sec;
+    opacity: 0.9;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*-------------------------------------*/
+
+/*-----Footer e Icone social footer---*/
+.footer {
+    line-height: 40px;
+}
+
+.social {
+    letter-spacing: 5px;
+}
+
+/*-------------------------------------*/
+
+/*---------Lente di ingrandimento------*/
+* {
+    box-sizing: border-box;
+}
+
+.img-magnifier-container {
+    position: relative;
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    /*Dimensioni lente di ingrandimento*/
+    width: 120px;
+    height: 120px;
+}
+
+/*-----------------------------------*/
+/*-----Stampa----*/
+.stampa_lista,
+.cancella {
+    visibility: hidden;
+}
+
+@media print {
+    #noPrint,
+    #stampa_lista,
+    #thisClose,
+    #chiudi {
+        display: none;
+    }
+}
+/*--------------------------------------*/
+
+/*---Card Misure -------------------------*/
+
+.box-sopra{
+    overflow: hidden;
+}
+.box-nascosto{
+    position: absolute;
+    top: 0;
+    left: 394px;
+    bottom: 0;
+    right: 0;
+    transition: all .4s linear;
+    background-color: rgba(59,60,64,.8);
+    padding: 5%;
+    transform: translate3d(0,120%,0);
+    width: 550px;
+}
+
+.box-sopra a:hover .box-nascosto{
+    transform: translate3d(0,50%,0);
+}
+/*-------------------------------------*/

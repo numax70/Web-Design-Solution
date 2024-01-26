@@ -1,0 +1,60 @@
+/* Cucine */
+
+.p-title,
+.th-title,
+.s-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+.p-title {
+    margin-top: 1.69em;
+    font-size: 1.29rem;
+}
+
+.th-title {
+   font-size: 1.29rem;
+   margin-top: 0.6em;
+   padding: 1em;
+}
+
+.s-title {
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+.c-t {
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+.mail {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+
+.i-t {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.mdf {
+    box-shadow:  0 3px 9px 0 rgb(0 0 0 / 17%);
+}
+
+.bt {
+    transition: 0.5s;
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+    font-size: 0.9rem;
+}
+
+.bt:hover{
+    opacity: 0.8;
+}
+
+/* Schede Tecniche */

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+
+h1,
+h2
+ {
+  -webkit-text-stroke: 2px black;
+}
+
+  h3 {
+    
+    -webkit-text-stroke: 0.8px black;
+    
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  a.nav-link>span:after {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    visibility: hidden;
+    -moz-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  
+  .nav-link:hover>span:after{
+    visibility: visible;
+    -moz-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  
+  .navbar-nav .nav-link.active{
+      color: #fdfdfd;
+  }
+
+  a:hover{
+    color:#4f73d9;
+  }
+
+:root{
+--paragraph-font: 'Chonburi', cursive;
+--paragraph-font-size: 1em;
+--family-font: 'Bigelow Rules', cursive;
+--topmargin: 100px;
+}
+
+.marginTop{
+    margin-top: var(--topmargin);
+}
+
+body {
+    background: linear-gradient(226.5525164749708deg,#010c2b 0%,#3F7FB9 100%);
+    font-family: var(--family-font);
+    position:relative;
+   
+}
+
+.paragraph{
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size);
+}
+
+.paragraph_2{
+    font-family: var(--paragraph-font);
+    
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+
+  .social>a{
+    transition: 0.8s;
+  }
+
+  .social>a:hover{
+    transform: scale(1.1);
+  }
+  
